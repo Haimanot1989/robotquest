@@ -29,4 +29,3 @@ test('robot reaches the flag when its position meets `F` on the board', () => {
 });
 
 // TODO: write some more tests on checkIfFlagReached
-
