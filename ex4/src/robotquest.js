@@ -33,7 +33,7 @@ let turns = 0;
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
-    prompt: '\n???> ' // OBS: '\n' means 'new line'
+    prompt: '\nRobotquest (press h for help)> ' // OBS: '\n' means 'new line'
 });
 
 
