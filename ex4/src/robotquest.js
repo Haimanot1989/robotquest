@@ -1,5 +1,5 @@
 'use strict';
-
+module.exports = {applyStep};
 let features = require('./robotquest-features');
 const readline = require('readline');
 
@@ -109,8 +109,12 @@ function applyStep(robot, step, maxLineIndex, maxColumnIndex) {
         return false;
     }
 
-    moves = features.move(robot, maxLineIndex, maxColumnIndex, moves);
-    return true;
+    if( step === 'move'){
+        moves = features.move(robot, maxLineIndex, maxColumnIndex, moves);
+        return true;
+    }
+
+    return false;
 }
 
 
