@@ -57,6 +57,14 @@ function main() {
                 step = 'move';
                 console.log('move');
                 break;
+            case 'r':
+                step = 'turn-right';
+                console.log('Robot has turned right');
+                break;
+            case 'l':
+                step = 'turn-left';
+                console.log('Robot has turned left');
+                break;
             case 'h':
                 console.log("\n'r' to turn-right, 'l' to turn-left, 'm' to move, ctrl+c to exit");
                 break;
