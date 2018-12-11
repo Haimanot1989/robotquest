@@ -57,6 +57,9 @@ function main() {
                 step = 'move';
                 console.log('move');
                 break;
+            case 'h':
+                console.log("\n'r' to turn-right, 'l' to turn-left, 'm' to move, ctrl+c to exit");
+                break;
             default:
                 console.log(`Unknown command, not one of ('r', 'l', 'm') '${inputFromUser.trim()}'`);
                 break;
